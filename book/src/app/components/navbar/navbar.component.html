@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/">
+        <img class="logo" src="/assets/logo app s.png" alt="logo" />
+        <span class="logo-text">BookNook</span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item" >
+              <a class="nav-link" routerLink="/home">Home<span class="sr-only" outerLinkActive="active">(current)</span></a>
+            </li>
+           
+            <li class="nav-item"  >
+              <a class="nav-link" routerLink="/category"  outerLinkActive="active">Categories</a>
+            </li>
+            <li class="nav-item"  >
+              <a class="nav-link" routerLink="/books"  outerLinkActive="active">Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"   routerLink="/signin"  outerLinkActive="active">Signin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"   routerLink="/signin"  outerLinkActive="active">Signout</a>
+            </li>
+          </ul>
+        </div>
+        <form class="search-form d-flex me-auto" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-dark" type="submit">Search</button>
+        </form>
+        <div class="auth-btns" *ngIf="!isLoggedIn">
+          <button class="btn btn-dark" type="submit" routerLink="./sign-in">
+            Sign in
+          </button>
+          <button
+            class="btn btn-outline-dark"
+            type="submit"
+            routerLink="./sign-up"
+          >
+            Sign up
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  

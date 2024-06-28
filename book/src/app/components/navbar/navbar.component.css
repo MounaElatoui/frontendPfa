@@ -1,0 +1,35 @@
+.logo {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .auth-btns {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    align-items: center;
+  }
+  
+  .categories-link {
+    text-decoration: none;
+  }
+  .categories-link:hover {
+    font-weight: 600;
+  }
+  
+  @media (max-width: 992px) {
+    .auth-btns {
+      justify-content: start;
+      gap: 10px;
+      width: auto;
+    }
+  
+    .dropdown-menu {
+      display: none;
+    }
+  
+    .search-form {
+      margin-bottom: 16px;
+    }
+  }
+  
